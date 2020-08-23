@@ -1,0 +1,1918 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0614.2338                               -->
+<workbook original-version='18.1' source-build='2020.2.2 (20202.20.0614.2338)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='loan_data_operational' inline='true' name='federated.16t6qq40baut81166bk3a1drzfvo' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='mysql.0hnfxbr06pc8sm1gzs9220a9blu8'>
+            <connection class='mysql' dbname='loan_data_operational' odbc-native-protocol='' one-time-sql='' port='3306' server='localhost' source-charset='' username='root' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='mysql.0hnfxbr06pc8sm1gzs9220a9blu8' name='loan_details_main' table='[loan_details_main]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='mysql.0hnfxbr06pc8sm1gzs9220a9blu8' name='loan_details_main' table='[loan_details_main]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[index]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>index</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loan_amnt</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[loan_amnt]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>loan_amnt</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>funded_amnt</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[funded_amnt]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>funded_amnt</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>funded_amnt_inv</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[funded_amnt_inv]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>funded_amnt_inv</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>int_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[int_rate]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>int_rate</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>installment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[installment]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>installment</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>grade</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[grade]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>grade</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sub_grade</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[sub_grade]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>sub_grade</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>emp_title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[emp_title]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>emp_title</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>emp_length</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[emp_length]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>emp_length</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_ownership</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[home_ownership]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>home_ownership</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>annual_inc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[annual_inc]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>annual_inc</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loan_status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[loan_status]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>loan_status</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>desc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[desc]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>desc</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>purpose</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[purpose]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>purpose</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>addr_state</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[addr_state]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>addr_state</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fico_range_low</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fico_range_low]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>fico_range_low</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fico_range_high</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fico_range_high]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>fico_range_high</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>inq_last_6mths</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[inq_last_6mths]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>inq_last_6mths</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mths_since_last_record</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mths_since_last_record]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>mths_since_last_record</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>open_acc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[open_acc]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>open_acc</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pub_rec</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pub_rec]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>pub_rec</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_acc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_acc]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>total_acc</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>application_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[application_type]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>application_type</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>acc_now_delinq</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[acc_now_delinq]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>acc_now_delinq</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>open_acc_6m</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[open_acc_6m]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>open_acc_6m</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>open_act_il</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[open_act_il]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>open_act_il</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>open_il_12m</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[open_il_12m]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>open_il_12m</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mths_since_rcnt_il</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mths_since_rcnt_il]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>mths_since_rcnt_il</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>open_rv_12m</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[open_rv_12m]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>open_rv_12m</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>inq_fi</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[inq_fi]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>inq_fi</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_cu_tl</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_cu_tl]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>total_cu_tl</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>inq_last_12m</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[inq_last_12m]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>inq_last_12m</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>acc_open_past_24mths</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[acc_open_past_24mths]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>acc_open_past_24mths</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mo_sin_old_il_acct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mo_sin_old_il_acct]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>mo_sin_old_il_acct</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mo_sin_old_rev_tl_op</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mo_sin_old_rev_tl_op]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>mo_sin_old_rev_tl_op</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mo_sin_rcnt_rev_tl_op</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mo_sin_rcnt_rev_tl_op]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>mo_sin_rcnt_rev_tl_op</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mo_sin_rcnt_tl</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mo_sin_rcnt_tl]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>mo_sin_rcnt_tl</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mort_acc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mort_acc]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>mort_acc</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mths_since_recent_bc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mths_since_recent_bc]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>mths_since_recent_bc</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mths_since_recent_bc_dlq</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mths_since_recent_bc_dlq]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>mths_since_recent_bc_dlq</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mths_since_recent_inq</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mths_since_recent_inq]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>mths_since_recent_inq</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_accts_ever_120_pd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[num_accts_ever_120_pd]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>num_accts_ever_120_pd</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_actv_bc_tl</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[num_actv_bc_tl]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>num_actv_bc_tl</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_actv_rev_tl</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[num_actv_rev_tl]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>num_actv_rev_tl</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_bc_sats</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[num_bc_sats]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>num_bc_sats</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_bc_tl</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[num_bc_tl]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>num_bc_tl</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_il_tl</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[num_il_tl]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>num_il_tl</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_op_rev_tl</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[num_op_rev_tl]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>num_op_rev_tl</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_rev_accts</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[num_rev_accts]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>num_rev_accts</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_rev_tl_bal_gt_0</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[num_rev_tl_bal_gt_0]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>num_rev_tl_bal_gt_0</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_sats</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[num_sats]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>num_sats</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_tl_120dpd_2m</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[num_tl_120dpd_2m]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>num_tl_120dpd_2m</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_tl_30dpd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[num_tl_30dpd]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>num_tl_30dpd</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_tl_op_past_12m</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[num_tl_op_past_12m]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>num_tl_op_past_12m</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pct_tl_nvr_dlq</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct_tl_nvr_dlq]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>pct_tl_nvr_dlq</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_bc_gt_75</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percent_bc_gt_75]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>percent_bc_gt_75</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pub_rec_bankruptcies</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pub_rec_bankruptcies]</local-name>
+            <parent-name>[loan_details_main]</parent-name>
+            <remote-alias>pub_rec_bankruptcies</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[loan_details_main_97A611B219DE485D8E46F310D03E3981]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='loan_details_main' datatype='table' name='[__tableau_internal_object_id__].[loan_details_main_97A611B219DE485D8E46F310D03E3981]' role='measure' type='quantitative' />
+      <column caption='Acc Now Delinq' datatype='real' name='[acc_now_delinq]' role='measure' type='quantitative' />
+      <column caption='Acc Open Past 24Mths' datatype='real' name='[acc_open_past_24mths]' role='measure' type='quantitative' />
+      <column caption='Addr State' datatype='string' name='[addr_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Annual Inc' datatype='real' name='[annual_inc]' role='measure' type='quantitative' />
+      <column caption='Application Type' datatype='string' name='[application_type]' role='dimension' type='nominal' />
+      <column caption='Desc' datatype='string' name='[desc]' role='dimension' type='nominal' />
+      <column caption='Emp Length' datatype='real' name='[emp_length]' role='measure' type='quantitative' />
+      <column caption='Emp Title' datatype='string' name='[emp_title]' role='dimension' type='nominal' />
+      <column caption='Fico Range High' datatype='real' name='[fico_range_high]' role='measure' type='quantitative' />
+      <column caption='Fico Range Low' datatype='real' name='[fico_range_low]' role='measure' type='quantitative' />
+      <column caption='Funded Amnt' datatype='real' name='[funded_amnt]' role='measure' type='quantitative' />
+      <column caption='Funded Amnt Inv' datatype='real' name='[funded_amnt_inv]' role='measure' type='quantitative' />
+      <column caption='Grade' datatype='string' name='[grade]' role='dimension' type='nominal' />
+      <column caption='Home Ownership' datatype='string' name='[home_ownership]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='real' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Index' datatype='integer' name='[index]' role='measure' type='quantitative' />
+      <column caption='Inq Fi' datatype='real' name='[inq_fi]' role='measure' type='quantitative' />
+      <column caption='Inq Last 12M' datatype='real' name='[inq_last_12m]' role='measure' type='quantitative' />
+      <column caption='Inq Last 6Mths' datatype='real' name='[inq_last_6mths]' role='measure' type='quantitative' />
+      <column caption='Installment' datatype='real' name='[installment]' role='measure' type='quantitative' />
+      <column caption='Int Rate' datatype='real' name='[int_rate]' role='measure' type='quantitative' />
+      <column caption='Loan Amnt' datatype='real' name='[loan_amnt]' role='measure' type='quantitative' />
+      <column caption='Loan Status' datatype='string' name='[loan_status]' role='dimension' type='nominal' />
+      <column caption='Mo Sin Old Il Acct' datatype='real' name='[mo_sin_old_il_acct]' role='measure' type='quantitative' />
+      <column caption='Mo Sin Old Rev Tl Op' datatype='real' name='[mo_sin_old_rev_tl_op]' role='measure' type='quantitative' />
+      <column caption='Mo Sin Rcnt Rev Tl Op' datatype='real' name='[mo_sin_rcnt_rev_tl_op]' role='measure' type='quantitative' />
+      <column caption='Mo Sin Rcnt Tl' datatype='real' name='[mo_sin_rcnt_tl]' role='measure' type='quantitative' />
+      <column caption='Mort Acc' datatype='real' name='[mort_acc]' role='measure' type='quantitative' />
+      <column caption='Mths Since Last Record' datatype='real' name='[mths_since_last_record]' role='measure' type='quantitative' />
+      <column caption='Mths Since Rcnt Il' datatype='real' name='[mths_since_rcnt_il]' role='measure' type='quantitative' />
+      <column caption='Mths Since Recent Bc' datatype='real' name='[mths_since_recent_bc]' role='measure' type='quantitative' />
+      <column caption='Mths Since Recent Bc Dlq' datatype='real' name='[mths_since_recent_bc_dlq]' role='measure' type='quantitative' />
+      <column caption='Mths Since Recent Inq' datatype='real' name='[mths_since_recent_inq]' role='measure' type='quantitative' />
+      <column caption='Num Accts Ever 120 Pd' datatype='real' name='[num_accts_ever_120_pd]' role='measure' type='quantitative' />
+      <column caption='Num Actv Bc Tl' datatype='real' name='[num_actv_bc_tl]' role='measure' type='quantitative' />
+      <column caption='Num Actv Rev Tl' datatype='real' name='[num_actv_rev_tl]' role='measure' type='quantitative' />
+      <column caption='Num Bc Sats' datatype='real' name='[num_bc_sats]' role='measure' type='quantitative' />
+      <column caption='Num Bc Tl' datatype='real' name='[num_bc_tl]' role='measure' type='quantitative' />
+      <column caption='Num Il Tl' datatype='real' name='[num_il_tl]' role='measure' type='quantitative' />
+      <column caption='Num Op Rev Tl' datatype='real' name='[num_op_rev_tl]' role='measure' type='quantitative' />
+      <column caption='Num Rev Accts' datatype='real' name='[num_rev_accts]' role='measure' type='quantitative' />
+      <column caption='Num Rev Tl Bal Gt 0' datatype='real' name='[num_rev_tl_bal_gt_0]' role='measure' type='quantitative' />
+      <column caption='Num Sats' datatype='real' name='[num_sats]' role='measure' type='quantitative' />
+      <column caption='Num Tl 120Dpd 2M' datatype='real' name='[num_tl_120dpd_2m]' role='measure' type='quantitative' />
+      <column caption='Num Tl 30Dpd' datatype='real' name='[num_tl_30dpd]' role='measure' type='quantitative' />
+      <column caption='Num Tl Op Past 12M' datatype='real' name='[num_tl_op_past_12m]' role='measure' type='quantitative' />
+      <column caption='Open Acc' datatype='real' name='[open_acc]' role='measure' type='quantitative' />
+      <column caption='Open Acc 6M' datatype='real' name='[open_acc_6m]' role='measure' type='quantitative' />
+      <column caption='Open Act Il' datatype='real' name='[open_act_il]' role='measure' type='quantitative' />
+      <column caption='Open Il 12M' datatype='real' name='[open_il_12m]' role='measure' type='quantitative' />
+      <column caption='Open Rv 12M' datatype='real' name='[open_rv_12m]' role='measure' type='quantitative' />
+      <column caption='Pct Tl Nvr Dlq' datatype='real' name='[pct_tl_nvr_dlq]' role='measure' type='quantitative' />
+      <column caption='Percent Bc Gt 75' datatype='real' name='[percent_bc_gt_75]' role='measure' type='quantitative' />
+      <column caption='Pub Rec' datatype='real' name='[pub_rec]' role='measure' type='quantitative' />
+      <column caption='Pub Rec Bankruptcies' datatype='real' name='[pub_rec_bankruptcies]' role='measure' type='quantitative' />
+      <column caption='Purpose' datatype='string' name='[purpose]' role='dimension' type='nominal' />
+      <column caption='Sub Grade' datatype='string' name='[sub_grade]' role='dimension' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Total Acc' datatype='real' name='[total_acc]' role='measure' type='quantitative' />
+      <column caption='Total Cu Tl' datatype='real' name='[total_cu_tl]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='loan_details_main' id='loan_details_main_97A611B219DE485D8E46F310D03E3981'>
+            <properties context=''>
+              <relation connection='mysql.0hnfxbr06pc8sm1gzs9220a9blu8' name='loan_details_main' table='[loan_details_main]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Avg_Num_Accs'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Avg Number of Accounts by Grade and Status</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='loan_data_operational' name='federated.16t6qq40baut81166bk3a1drzfvo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16t6qq40baut81166bk3a1drzfvo'>
+            <column-instance column='[total_acc]' derivation='Avg' name='[avg:total_acc:qk]' pivot='key' type='quantitative' />
+            <column caption='Grade' datatype='string' name='[grade]' role='dimension' type='nominal' />
+            <column caption='Loan Status' datatype='string' name='[loan_status]' role='dimension' type='nominal' />
+            <column-instance column='[grade]' derivation='None' name='[none:grade:nk]' pivot='key' type='nominal' />
+            <column-instance column='[loan_status]' derivation='None' name='[none:loan_status:nk]' pivot='key' type='nominal' />
+            <column caption='Total Acc' datatype='real' name='[total_acc]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16t6qq40baut81166bk3a1drzfvo].[none:grade:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:grade:nk]' member='&quot;E&quot;' />
+              <groupfilter function='member' level='[none:grade:nk]' member='&quot;F&quot;' />
+              <groupfilter function='member' level='[none:grade:nk]' member='&quot;G&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.16t6qq40baut81166bk3a1drzfvo].[none:grade:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.16t6qq40baut81166bk3a1drzfvo].[none:grade:nk] / [federated.16t6qq40baut81166bk3a1drzfvo].[none:loan_status:nk])</rows>
+        <cols>[federated.16t6qq40baut81166bk3a1drzfvo].[avg:total_acc:qk]</cols>
+      </table>
+      <simple-id uuid='{A0FC7CDE-A083-401D-96EC-B13E344367C7}' />
+    </worksheet>
+    <worksheet name='Avg_Num_Pub_Rec'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Avg Number of Public Records by Grade and Loan Status
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='loan_data_operational' name='federated.16t6qq40baut81166bk3a1drzfvo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16t6qq40baut81166bk3a1drzfvo'>
+            <column-instance column='[pub_rec]' derivation='Avg' name='[avg:pub_rec:qk]' pivot='key' type='quantitative' />
+            <column caption='Grade' datatype='string' name='[grade]' role='dimension' type='nominal' />
+            <column caption='Loan Status' datatype='string' name='[loan_status]' role='dimension' type='nominal' />
+            <column-instance column='[grade]' derivation='None' name='[none:grade:nk]' pivot='key' type='nominal' />
+            <column-instance column='[loan_status]' derivation='None' name='[none:loan_status:nk]' pivot='key' type='nominal' />
+            <column caption='Pub Rec' datatype='real' name='[pub_rec]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16t6qq40baut81166bk3a1drzfvo].[none:grade:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:grade:nk]' member='&quot;E&quot;' />
+              <groupfilter function='member' level='[none:grade:nk]' member='&quot;F&quot;' />
+              <groupfilter function='member' level='[none:grade:nk]' member='&quot;G&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.16t6qq40baut81166bk3a1drzfvo].[none:grade:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.16t6qq40baut81166bk3a1drzfvo].[none:grade:nk] / [federated.16t6qq40baut81166bk3a1drzfvo].[none:loan_status:nk])</rows>
+        <cols>[federated.16t6qq40baut81166bk3a1drzfvo].[avg:pub_rec:qk]</cols>
+      </table>
+      <simple-id uuid='{6D79991B-B11A-411F-B0A3-2DC81FC07DA0}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Avg_Num_Accs'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='32'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16t6qq40baut81166bk3a1drzfvo].[none:grade:nk]</field>
+            <field>[federated.16t6qq40baut81166bk3a1drzfvo].[none:loan_status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3560E393-8DBB-47B8-B8FB-F8989FE005F8}' />
+    </window>
+    <window class='worksheet' name='Avg_Num_Pub_Rec'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.16t6qq40baut81166bk3a1drzfvo].[none:grade:nk]</field>
+            <field>[federated.16t6qq40baut81166bk3a1drzfvo].[none:loan_status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C28617B3-CA61-4B1A-B24F-D4B1D8DA963E}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Avg_Num_Accs' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Avg_Num_Pub_Rec' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
